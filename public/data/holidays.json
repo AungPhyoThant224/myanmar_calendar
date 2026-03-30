@@ -1,0 +1,8 @@
+[
+  { "id": 1, "date": "2026-01-04", "name": "Independence Day", "type": "Public" },
+  { "id": 2, "date": "2026-02-12", "name": "Union Day", "type": "Public" },
+  { "id": 3, "date": "2026-03-02", "name": "Peasants' Day", "type": "Public" },
+  { "id": 4, "date": "2026-03-31", "name": "Full Moon Day of Tabaung", "type": "Religious" },
+  { "id": 5, "date": "2026-04-13", "name": "Thingyan Eve", "type": "Thingyan" },
+  { "id": 6, "date": "2026-04-17", "name": "Myanmar New Year Day", "type": "Public" }
+]
