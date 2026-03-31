@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { Holiday } from '../types/holiday';
 import { isSameDay } from '../utils/calendarLogic';
 
@@ -7,6 +8,9 @@ interface DayCellProps {
 }
 
 const DayCell = ({ date, holiday }: DayCellProps) => {
+
+  const [isVisible, setIsVisible] = useState(false);
+
   if (!date) return <div className="h-12 w-12 m-auto" />;
 
   const today = new Date();
@@ -39,7 +43,10 @@ const DayCell = ({ date, holiday }: DayCellProps) => {
   `;
 
   return (
-    <div className={cellClasses}>
+    <div className={cellClasses} 
+      onMouseEnter={() => setIsVisible(true)}
+      onMouseLeave={() => setIsVisible(false)}
+      onClick={() => setIsVisible(!isVisible)}>
       {date.getDate()}
 
       {holiday && isToday && (
@@ -47,9 +54,9 @@ const DayCell = ({ date, holiday }: DayCellProps) => {
       )}
 
       {holiday && (
-        <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 z-50 
-                      pointer-events-none opacity-0 group-hover:opacity-100 
-                      transition-opacity duration-200 w-max ">
+        <div className={`absolute bottom-full mb-2 left-1/2 -translate-x-1/2 z-50 
+                      pointer-events-none transition-opacity duration-200 w-max
+                      ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className="bg-slate-800 text-white text-[14px] py-1.5 px-3 rounded-lg shadow-xl border border-slate-700">
             <p className="font-bold leading-tight">{holiday.name}</p>
             <p className="text-[9px] opacity-60 mt-0.5 uppercase tracking-wider">Public Holiday</p>
