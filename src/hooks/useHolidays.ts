@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { Holiday } from '../types/holiday';
+import { formatDateLocal } from '../utils/calendarLogic';
 
 export const useHolidays = () => {
   const [holidays, setHolidays] = useState<Holiday[]>([]);
@@ -30,7 +31,7 @@ export const useHolidays = () => {
   }, []);
 
   const getHolidayByDate = (date: Date) => {
-    const dateString = date.toISOString().split('T')[0];
+    const dateString = formatDateLocal(date);
     return holidays.find(h => h.date === dateString);
   };
 

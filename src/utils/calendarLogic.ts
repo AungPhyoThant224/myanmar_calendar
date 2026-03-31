@@ -37,5 +37,14 @@ export const calculateInitialPage = () => {
     const startYear = 2021;
     const monthsDiff =
       (today.getFullYear() - startYear) * 12 + today.getMonth();
-    return Math.floor(monthsDiff / 4);
+    const initialPage = Math.floor(monthsDiff/4)
+    return initialPage > 18 ? 18 : initialPage;
+};
+
+export const formatDateLocal = (date: Date): string => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  
+  return `${year}-${month}-${day}`;
 };
