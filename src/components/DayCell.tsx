@@ -55,11 +55,11 @@ const DayCell = ({ date, holiday }: DayCellProps) => {
 
       {holiday && (
         <div className={`absolute bottom-full mb-2 left-1/2 -translate-x-1/2 z-50 
-                      pointer-events-none transition-opacity duration-200 w-max
+                      pointer-events-none transition-opacity duration-200 w-max max-w-[120px]
                       ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <div className="bg-slate-800 text-white text-[14px] py-1.5 px-3 rounded-lg shadow-xl border border-slate-700">
+          <div className="bg-slate-800 text-white text-[12px] py-1.5 px-3 rounded-lg shadow-xl border border-slate-700">
             <p className="font-bold leading-tight">{holiday.name}</p>
-            <p className="text-[9px] opacity-60 mt-0.5 uppercase tracking-wider">Public Holiday</p>
+            <p className="text-[9px] opacity-60 mt-1 uppercase tracking-wider">Public Holiday</p>
             <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-800" />
           </div>
         </div>

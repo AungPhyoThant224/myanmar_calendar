@@ -18,7 +18,7 @@ const CalendarLayout = () => {
     return <div className="p-10 text-center">Loading Calendar Data...</div>;
 
   return (
-    <div className="max-w-6xl mx-auto px-2 md:px-6 py-6">
+    <div className="max-w-6xl mx-auto px-2 md:px-6 py-6 overflow-x-hidden md:overflow-x-visible">
       <div className="flex justify-end items-center mb-8">
         <div className="flex gap-2">
           <button
