@@ -4,9 +4,3 @@ export interface Holiday {
   name: string;
   type?: string;
 }
-
-export interface CalendarDay {
-  date: Date;
-  isCurrentMonth: boolean;
-  holiday?: Holiday;
-}

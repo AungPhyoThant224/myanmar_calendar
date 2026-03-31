@@ -1,8 +1,40 @@
 [
-  { "id": 1, "date": "2026-01-04", "name": "Independence Day", "type": "Public" },
-  { "id": 2, "date": "2026-02-12", "name": "Union Day", "type": "Public" },
-  { "id": 3, "date": "2026-03-02", "name": "Peasants' Day", "type": "Public" },
-  { "id": 4, "date": "2026-03-31", "name": "Full Moon Day of Tabaung", "type": "Religious" },
-  { "id": 5, "date": "2026-04-13", "name": "Thingyan Eve", "type": "Thingyan" },
-  { "id": 6, "date": "2026-04-17", "name": "Myanmar New Year Day", "type": "Public" }
+  { "id": 1, "date": "2026-01-01", "name": "New Year's Day", "type": "Public" },
+  { "id": 2, "date": "2026-01-02", "name": "New Year Holiday", "type": "Public" },
+  { "id": 3, "date": "2026-01-04", "name": "Independence Day", "type": "Public" },
+
+  { "id": 4, "date": "2026-02-12", "name": "Union Day", "type": "Public" },
+  { "id": 5, "date": "2026-02-13", "name": "Union Day Holiday", "type": "Public" },
+  { "id": 6, "date": "2026-02-16", "name": "Chinese New Year", "type": "Public" },
+  { "id": 7, "date": "2026-02-17", "name": "Chinese New Year Holiday", "type": "Public" },
+
+  { "id": 8, "date": "2026-03-02", "name": "Peasants' Day", "type": "Public" },
+  { "id": 9, "date": "2026-03-02", "name": "Full Moon Day of Tabaung", "type": "Public" },
+  { "id": 10, "date": "2026-03-27", "name": "Armed Forces' Day", "type": "Public" },
+
+  { "id": 11, "date": "2026-04-11", "name": "Thingyan Water Festival", "type": "Public" },
+  { "id": 12, "date": "2026-04-12", "name": "Thingyan Water Festival", "type": "Public" },
+  { "id": 13, "date": "2026-04-13", "name": "Thingyan Water Festival", "type": "Public" },
+  { "id": 14, "date": "2026-04-14", "name": "Thingyan Water Festival", "type": "Public" },
+  { "id": 15, "date": "2026-04-15", "name": "Thingyan Water Festival", "type": "Public" },
+  { "id": 16, "date": "2026-04-16", "name": "Thingyan Water Festival", "type": "Public" },
+  { "id": 17, "date": "2026-04-17", "name": "Myanmar New Year", "type": "Public" },
+  { "id": 18, "date": "2026-04-18", "name": "Thingyan Holiday", "type": "Public" },
+  { "id": 19, "date": "2026-04-19", "name": "Thingyan Holiday", "type": "Public" },
+
+  { "id": 20, "date": "2026-04-30", "name": "Full Moon Day of Kasong", "type": "Public" },
+  { "id": 21, "date": "2026-05-01", "name": "Labour Day", "type": "Public" },
+
+  { "id": 22, "date": "2026-07-19", "name": "Martyrs' Day", "type": "Public" },
+  { "id": 23, "date": "2026-07-29", "name": "Full Moon Day of Waso", "type": "Public" },
+
+  { "id": 24, "date": "2026-10-25", "name": "Full Moon Day of Thadingyut", "type": "Public" },
+  { "id": 25, "date": "2026-10-26", "name": "Thadingyut Holiday", "type": "Public" },
+  { "id": 26, "date": "2026-10-27", "name": "Thadingyut Holiday", "type": "Public" },
+
+  { "id": 27, "date": "2026-11-23", "name": "Full Moon Day of Tazaungmone", "type": "Public" },
+  { "id": 28, "date": "2026-11-24", "name": "Tazaungmone Holiday", "type": "Public" },
+
+  { "id": 29, "date": "2026-12-04", "name": "National Day", "type": "Public" },
+  { "id": 30, "date": "2026-12-25", "name": "Christmas Day", "type": "Public" }
 ]
